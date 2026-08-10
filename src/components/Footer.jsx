@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="text-center sm:text-left">
           <div className="font-semibold text-slate-200">{profile.name}</div>
           <div className="mt-1 text-sm text-slate-500">
-            Forward Deployed Engineer · Built with React, Tailwind & Framer Motion
+            Forward Deployed Engineer | AI Engineer | Full-Stack Developer - AI Applied
           </div>
         </div>
 

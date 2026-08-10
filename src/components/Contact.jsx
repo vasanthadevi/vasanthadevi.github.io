@@ -62,7 +62,7 @@ export default function Contact() {
               rel="noreferrer"
               className="mt-8 inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-teal-soft to-violet-soft px-6 py-3 text-sm font-semibold text-ink-950 transition-transform hover:scale-[1.03]"
             >
-              <FileText size={16} /> Download Résumé
+              <FileText size={16} /> Download Resume
             </a>
           </div>
         </div>

@@ -43,7 +43,7 @@ body {
     @apply border border-white/5 bg-white/[0.02] backdrop-blur-sm;
   }
   .gradient-text {
-    @apply bg-gradient-to-r from-teal-soft via-slate-100 to-violet-soft bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-teal-soft to-violet-soft bg-clip-text text-transparent;
   }
   .chip {
     @apply inline-flex items-center rounded-full border border-white/[0.08] bg-white/[0.03] px-3 py-1 text-xs font-medium text-slate-300;

@@ -2,7 +2,7 @@
 
 export const profile = {
   name: "Vasantha Devi Kandasamy",
-  roles: ["Forward Deployed Engineer", "AI Engineer", "Full-Stack Developer"],
+  roles: ["Forward Deployed Engineer", "AI Engineer", "Full-Stack Developer - AI Applied"],
   location: "Calgary, Alberta",
   phone: "(437) 987-8361",
   email: "vasanthadevikandasamy@gmail.com",
@@ -10,9 +10,9 @@ export const profile = {
   github: "https://github.com/vasanthadevi",
   resume: import.meta.env.BASE_URL + "Vasantha_Devi_Kandasamy_Chata_Resume.pdf",
   summary:
-    "Full-stack engineer who designs, builds, and ships production AI systems end to end — LLM agents, retrieval-augmented generation (RAG), and tool-using assistants — with the safety, evaluation, and deployment rigor real customers require.",
+    "Full-stack engineer who designs, builds, and ships production AI systems end to end LLM agents, retrieval-augmented generation (RAG), and tool-using assistants with the safety, evaluation, and deployment rigor real customers require.",
   longSummary:
-    "Master of Computer Applications with 3+ years of web development (React/Node) plus recent data-analytics and applied-AI training. I've recently shipped four public, portfolio-grade AI applications — a natural-language-to-SQL analytics copilot, an agentic operations copilot, an AI service advisor for a real Calgary business, and a streaming support assistant — each containerized, tested with evaluation suites, and deployment-ready. I'm comfortable owning a problem from the first customer conversation to a deployed, observable solution.",
+    "Master of Computer Applications with 3+ years of web development (React/Node) plus recent data-analytics and applied-AI training. I've recently shipped four public, portfolio-grade AI applications: a natural-language-to-SQL analytics copilot, an agentic operations copilot, an AI service advisor for a real Calgary business, and a streaming support assistant. Each containerized, tested with evaluation suites, and deployment-ready. I'm comfortable owning a problem from the first customer conversation to a deployed, observable solution.",
 };
 
 export const stats = [
@@ -86,6 +86,7 @@ export const skills = [
     items: [
       "Playwright",
       "Cypress",
+      "Jest",
       "Eval-Driven Testing",
       "Agile / Scrum",
       "JIRA",
@@ -122,7 +123,7 @@ export const projects = [
   },
   {
     name: "Nimbus Operations Copilot",
-    tagline: "Agentic operations assistant (capstone)",
+    tagline: "Agentic operations assistant with human-in-the-loop approval",
     accent: "violet",
     stack: [
       "Python",
@@ -137,9 +138,9 @@ export const projects = [
     github: "https://github.com/vasanthadevi/ops-copilot",
     demo: "",
     highlights: [
-      "Multi-step agent that plans across tools exposed through a custom Model Context Protocol (MCP) server — searching docs, querying customer & billing data, issuing refunds, and opening tickets.",
+      "Multi-step agent that plans across tools exposed through a custom Model Context Protocol (MCP) server. It searches docs, querying customer & billing data, issuing refunds, and opening tickets.",
       "Enforced human-in-the-loop approval before any data-changing action: the agent pauses and cannot execute a write until a human approves it, delivered over a live server-sent-events stream.",
-      "Instrumented every model and tool call with Langfuse tracing (cost, latency, full decision tree) and wrote a 10-task eval suite — 10/10 correctness with zero writes executed without approval.",
+      "Instrumented every model and tool call with Langfuse tracing (cost, latency, full decision tree) and wrote a 10-task eval suite. Result: 10/10 correctness with zero writes executed without approval.",
     ],
     metrics: [
       { k: "Eval correctness", v: "10/10" },
@@ -163,7 +164,7 @@ export const projects = [
     github: "https://github.com/vasanthadevi/singhs-auto-lab-advisor",
     demo: "",
     highlights: [
-      "Triages a customer's problem and returns a grounded estimate from a structured pricing knowledge base — priced by the data, not the model.",
+      "Triages a customer's problem and returns a grounded estimate from a structured pricing knowledge base, priced by the data and not the model.",
       "Books directly into a real Google Calendar and recognizes returning customers via a phone-keyed CRM, with SMS through Twilio.",
       "Capabilities split into repointable MCP servers, plus vision photo-diagnosis and an owner dashboard.",
     ],
@@ -180,7 +181,7 @@ export const projects = [
     github: "https://github.com/vasanthadevi/ai-support-assistant",
     demo: "",
     highlights: [
-      "Real-time assistant that streams answers token-by-token (SSE) and calls tools to search a knowledge base and look up live order data mid-conversation — citing its sources and refusing to guess.",
+      "Real-time assistant that streams answers token-by-token (SSE) and calls tools to search a knowledge base and look up live order data mid-conversation, citing its sources and refusing to guess.",
       "Implemented an agentic tool-use loop with grounded, non-hallucinated responses and per-message token-cost tracking.",
     ],
     metrics: [

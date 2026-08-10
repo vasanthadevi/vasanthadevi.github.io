@@ -73,9 +73,8 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.1 }}
           className="max-w-4xl text-5xl font-extrabold leading-[1.05] tracking-tight text-slate-100 sm:text-6xl md:text-7xl"
         >
-          {profile.name.split(" ").slice(0, 2).join(" ")}{" "}
-          <span className="gradient-text">
-            {profile.name.split(" ").slice(2).join(" ")}
+          <span className="bg-gradient-to-r from-[#9af5ec] via-[#c7e6ff] to-[#cdc2ff] bg-clip-text text-transparent">
+            {profile.name}
           </span>
         </motion.h1>
 

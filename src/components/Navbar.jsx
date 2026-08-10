@@ -83,7 +83,7 @@ export default function Navbar() {
             rel="noreferrer"
             className="ml-2 inline-flex items-center gap-1.5 rounded-lg border border-teal-soft/30 bg-teal-soft/10 px-3.5 py-2 text-sm font-semibold text-teal-soft transition-all hover:bg-teal-soft/20"
           >
-            <FileText size={15} /> Résumé
+            <FileText size={15} /> Resume
           </a>
         </div>
 
@@ -129,7 +129,7 @@ export default function Navbar() {
                 rel="noreferrer"
                 className="mt-1 inline-flex items-center gap-1.5 rounded-lg border border-teal-soft/30 bg-teal-soft/10 px-3.5 py-2.5 text-sm font-semibold text-teal-soft"
               >
-                <FileText size={15} /> Résumé
+                <FileText size={15} /> Resume
               </a>
             </div>
           </motion.div>

@@ -26,15 +26,14 @@ export default function About() {
     <section id="about" className="section-pad">
       <SectionHeading
         eyebrow="About"
-        title="From first customer conversation to a deployed, observable solution"
-      />
+        title="Full-stack dev who builds AI tools that actually ship."/>
       <div className="grid gap-12 md:grid-cols-5">
         <Reveal className="md:col-span-3">
           <p className="text-lg leading-relaxed text-slate-300">
             {profile.longSummary}
           </p>
           <p className="mt-6 leading-relaxed text-slate-400">
-            I own problems end to end — comfortable in the room with customers,
+            I own problems end to end, comfortable in the room with customers,
             in the codebase, and on the deployment pipeline. My recent work pairs
             modern LLM engineering (Claude API, MCP, pgvector RAG, Langfuse
             observability) with the full-stack foundation of 3+ years building
