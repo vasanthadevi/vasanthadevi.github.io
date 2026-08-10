@@ -250,6 +250,11 @@ export const experience = [
 
 export const education = [
   {
+    title: "Junior Data Analyst Program",
+    org: "NPower Canada, Calgary",
+    year: "2024",
+  },
+  {
     title: "Master of Computer Applications (MCA)",
     org: "Bharathiar University, India",
     year: "2006",
@@ -262,7 +267,6 @@ export const education = [
 ];
 
 export const certifications = [
-  { title: "Junior Data Analyst Program", org: "NPower Canada, Calgary", year: "2024" },
   {
     title: "IBM Data Analyst",
     org: "Professional Certificate, Coursera",
