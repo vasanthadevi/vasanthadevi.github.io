@@ -8,9 +8,8 @@
   color-scheme: dark;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+/* Smooth scrolling is handled in JS (App.jsx) for a controlled, slower
+   duration; the native version can't be tuned and felt too fast. */
 
 body {
   @apply bg-ink-950 text-slate-300 font-sans antialiased;
