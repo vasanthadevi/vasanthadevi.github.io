@@ -8,7 +8,7 @@ export const profile = {
   email: "vasanthadevikandasamy@gmail.com",
   linkedin: "https://linkedin.com/in/vasantha-devi-kandasamy",
   github: "https://github.com/vasanthadevi",
-  resume: import.meta.env.BASE_URL + "Vasantha_Devi_Kandasamy_Chata_Resume.pdf",
+  resume: import.meta.env.BASE_URL + "Vasantha_Devi_Kandasamy_Resume.pdf",
   summary:
     "Full-stack engineer who designs, builds, and ships production AI systems end to end LLM agents, retrieval-augmented generation (RAG), and tool-using assistants with the safety, evaluation, and deployment rigor real customers require.",
   longSummary:
@@ -193,14 +193,26 @@ export const projects = [
 
 export const experience = [
   {
+    role: "Full-Stack / AI Engineer",
+    org: "CMDSpace",
+    location: "Calgary, Alberta",
+    period: "Jul 2026 – Present",
+    kind: "Volunteer",
+    points: [
+      "Part of the AI development team for Focus, a task assistant, contributing to a chatbot service (Python, LangChain, RAG over a local LLM) that lets users create, filter, and query tasks in natural language.",
+      "Worked on the React 19 and TypeScript front end, a command-bar-first (⌘K) task UI with Zustand and React Query, covered by Vitest and Playwright tests.",
+      "Worked on the back-end task API in FastAPI, SQLAlchemy, and PostgreSQL, containerized with Docker for consistent deployment.",
+    ],
+  },
+  {
     role: "Front-End Developer",
     org: "CMDSpace",
     location: "Calgary, Alberta",
     period: "Jan 2024 – Jun 2024",
     kind: "Volunteer",
     points: [
-      "Built the front end for an AI-based meeting-organizer application (React, Node.js, Express, MySQL, Playwright).",
-      "Dockerized the app and ran containerized tests for reliable deployment.",
+      "Built the CMDSpace marketing website (cmdspace.io) to the provided requirements: a responsive React single-page site presenting the company's AI solutions and services.",
+      "Developed the landing experience, service sections (machine learning, neural networks, NLP), a feature-highlights grid, and a schedule-a-demo call to action, with a clean design across desktop and mobile.",
     ],
   },
   {
