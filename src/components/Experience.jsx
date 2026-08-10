@@ -1,3 +1,4 @@
+import { ExternalLink } from "lucide-react";
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
 import { experience } from "../data";
@@ -33,11 +34,22 @@ export default function Experience() {
                       {e.period}
                     </span>
                   </div>
-                  <div className="mt-1 flex items-center gap-2 text-xs text-slate-500">
+                  <div className="mt-1 flex flex-wrap items-center gap-2 text-xs text-slate-500">
                     <span className="chip !py-0.5 !text-[10px] uppercase tracking-wide">
                       {e.kind}
                     </span>
                     {e.location}
+                    {e.link && (
+                      <a
+                        href={e.link}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center gap-1 text-teal-soft transition-colors hover:text-teal-soft/80 hover:underline"
+                      >
+                        <ExternalLink size={12} />
+                        {e.linkLabel || "Profile"}
+                      </a>
+                    )}
                   </div>
                   <ul className="mt-4 space-y-2">
                     {e.points.map((pt) => (

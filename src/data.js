@@ -221,6 +221,8 @@ export const experience = [
     location: "Remote",
     period: "Jan 2013 – Jun 2015",
     kind: "Freelance",
+    link: "https://www.upwork.com/freelancers/~01d9bc8ce150b5b5b0?mp_source=share",
+    linkLabel: "Upwork profile",
     points: [
       "Developed, maintained, and supported web applications, ensuring performance and a strong user experience.",
       "Implemented a secure login and authentication component; delivered online training on front-end technologies to associates.",
