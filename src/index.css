@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-ink-950 text-slate-300 font-sans antialiased;
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(124, 111, 214, 0.12), transparent),
+    radial-gradient(ellipse 60% 50% at 90% 20%, rgba(94, 221, 208, 0.08), transparent);
+  background-attachment: fixed;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0c10;
+}
+::-webkit-scrollbar-thumb {
+  background: #232a38;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3aa99e;
+}
+
+@layer components {
+  .section-pad {
+    @apply mx-auto max-w-6xl px-6 py-24 md:py-32;
+  }
+  .glass {
+    @apply border border-white/5 bg-white/[0.02] backdrop-blur-sm;
+  }
+  .gradient-text {
+    @apply bg-gradient-to-r from-teal-soft via-slate-100 to-violet-soft bg-clip-text text-transparent;
+  }
+  .chip {
+    @apply inline-flex items-center rounded-full border border-white/[0.08] bg-white/[0.03] px-3 py-1 text-xs font-medium text-slate-300;
+  }
+  .section-eyebrow {
+    @apply mb-3 flex items-center gap-2 font-mono text-xs uppercase tracking-[0.25em] text-teal-soft/80;
+  }
+}
+
+/* Selection */
+::selection {
+  background: rgba(94, 221, 208, 0.25);
+  color: #e2e8f0;
+}
