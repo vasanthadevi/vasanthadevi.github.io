@@ -49,17 +49,36 @@ export default function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#top" className="group flex items-center gap-2">
+      <nav className="relative mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        {/* Brand: hidden while the hero name is on screen, slides into the
+            corner once the user starts scrolling. */}
+        <motion.a
+          href="#top"
+          initial={false}
+          animate={{ opacity: scrolled ? 1 : 0, x: scrolled ? 0 : -12 }}
+          transition={{ duration: 0.35, ease: "easeOut" }}
+          aria-hidden={!scrolled}
+          tabIndex={scrolled ? 0 : -1}
+          className={`group flex items-center gap-2 ${
+            scrolled ? "" : "pointer-events-none"
+          }`}
+        >
           <span className="grid h-9 w-9 place-items-center rounded-lg bg-gradient-to-br from-teal-soft/20 to-violet-soft/20 font-mono text-sm font-bold text-teal-soft ring-1 ring-white/10">
             VK
           </span>
           <span className="hidden text-sm font-semibold text-slate-200 sm:block">
             Vasantha Devi Kandasamy
           </span>
-        </a>
+        </motion.a>
 
-        <div className="hidden items-center gap-1 md:flex">
+        {/* Nav links: centered while at the top, dock to the right on scroll. */}
+        <div
+          className={`hidden items-center gap-1 md:flex ${
+            scrolled
+              ? ""
+              : "absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+          }`}
+        >
           {navLinks.map((l) => {
             const isActive = active === l.href.slice(1);
             return (
