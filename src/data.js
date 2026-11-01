@@ -97,6 +97,30 @@ export const skills = [
 
 export const projects = [
   {
+    name: "Fieldwork",
+    tagline: "QA agent that proves the answer on screen matches the data",
+    accent: "violet",
+    stack: [
+      "Playwright MCP",
+      "Python",
+      "Claude API",
+      "PostgreSQL",
+      "React",
+      "TypeScript",
+    ],
+    github: "https://github.com/vasanthadevi/fieldwork",
+    demo: "https://vasanthadevi.github.io/fieldwork/",
+    highlights: [
+      "Drives a text-to-SQL analytics app in a real browser through Playwright MCP, then reads the table, row count, written summary and measured chart bar widths that a user actually sees.",
+      "Grades every answer with deterministic code against gold SQL, so the AI never marks its own work. The Claude driver is built and unit-tested; published scores come from the scripted driver.",
+      "Caught 10 of 10 seeded display bugs with 0 false alarms in 24 clean checks, then turned verified runs into plain Playwright tests that fail when a bug returns.",
+    ],
+    metrics: [
+      { k: "Seeded bugs caught", v: "10/10" },
+      { k: "False alarms", v: "0" },
+    ],
+  },
+  {
     name: "Analytics Copilot",
     tagline: "Natural-language-to-SQL over a database",
     accent: "teal",
